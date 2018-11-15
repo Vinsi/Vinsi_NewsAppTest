@@ -29,3 +29,7 @@ you can move to news details further by tapping details button .it will open the
 
 
 
+# What i didn't implemented ?
+Not added url restrictions in transport security since am accessing variuos news links within the app
+Not added any SSL pinning 
+
