@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tzQ-4S-z3f">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,22 +14,22 @@
             <objects>
                 <viewController id="gfc-g2-IpG" customClass="NewsViewController" customModule="NewsApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yQj-g0-fdw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i0z-M3-vJW">
-                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                                <rect key="frame" x="0.0" y="128" width="375" height="650"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="203" id="Xcy-Gr-GL3" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xcy-Gr-GL3" id="lGM-GC-TaS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="202.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="202.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuA-on-f1i">
-                                                    <rect key="frame" x="8" y="104" width="359" height="23.5"/>
+                                                    <rect key="frame" x="8" y="103.66666666666667" width="359" height="24.333333333333329"/>
                                                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -51,13 +51,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-dq-YBI">
-                                                    <rect key="frame" x="8" y="76" width="359" height="21"/>
+                                                    <rect key="frame" x="8" y="76" width="359" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu3-3Y-4ii">
-                                                    <rect key="frame" x="8" y="135.5" width="359" height="21"/>
+                                                    <rect key="frame" x="8" y="136" width="359" height="20.666666666666657"/>
                                                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -73,7 +73,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8H-hO-CIe" customClass="DetailCellButton" customModule="NewsApp" customModuleProvider="target">
-                                                    <rect key="frame" x="317" y="164.5" width="50" height="30"/>
+                                                    <rect key="frame" x="317" y="164.66666666666666" width="50" height="30"/>
                                                     <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="6a9-DG-S7N"/>
@@ -132,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qC-J2-ygo">
-                                        <rect key="frame" x="132" y="28" width="111" height="34"/>
+                                        <rect key="frame" x="132" y="32" width="111" height="34"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mau-ov-TC2">
                                                 <rect key="frame" x="94" y="8" width="16" height="16"/>
@@ -177,7 +177,7 @@
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="3E3-YJ-mW8"/>
-                                    <constraint firstItem="9qC-J2-ygo" firstAttribute="centerY" secondItem="jY9-rH-Fxw" secondAttribute="centerY" constant="10" id="dKY-C9-OCj"/>
+                                    <constraint firstItem="9qC-J2-ygo" firstAttribute="centerY" secondItem="jY9-rH-Fxw" secondAttribute="centerY" constant="14" id="dKY-C9-OCj"/>
                                     <constraint firstItem="9qC-J2-ygo" firstAttribute="centerX" secondItem="jY9-rH-Fxw" secondAttribute="centerX" id="g0v-Om-9t6"/>
                                 </constraints>
                             </view>
@@ -185,9 +185,8 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Keyword" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4U4-nB-OUd">
-                                        <rect key="frame" x="8" y="12" width="200" height="30"/>
+                                        <rect key="frame" x="8" y="12" width="203" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="8R6-Xn-I3L"/>
                                             <constraint firstAttribute="height" constant="30" id="CTi-79-FDa"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -230,6 +229,7 @@
                                     <constraint firstAttribute="bottom" secondItem="4U4-nB-OUd" secondAttribute="bottom" constant="8" id="Tuv-uX-ISn"/>
                                     <constraint firstItem="4U4-nB-OUd" firstAttribute="leading" secondItem="H23-c0-M4g" secondAttribute="leading" constant="8" id="jEj-Vk-4v5"/>
                                     <constraint firstAttribute="trailing" secondItem="1RB-7B-mI9" secondAttribute="trailing" constant="8" id="mzC-Fq-ZVg"/>
+                                    <constraint firstItem="HiP-fl-Mxv" firstAttribute="leading" secondItem="4U4-nB-OUd" secondAttribute="trailing" constant="8" id="ocj-3b-yhp"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -268,11 +268,11 @@
             <objects>
                 <viewController id="axH-BR-ag0" customClass="WebViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptE-m3-pc0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhs-se-CA4">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="708"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -283,7 +283,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdV-dX-UQC">
-                                        <rect key="frame" x="161" y="31.5" width="53" height="21"/>
+                                        <rect key="frame" x="161" y="31.666666666666671" width="53" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Bd3-TI-ezm"/>
                                         </constraints>
@@ -340,7 +340,7 @@
             <objects>
                 <viewController id="IL9-2D-aLZ" customClass="SearchFilterForEveryNewsViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="csn-md-47G">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search key word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MLj-vh-VVx">
@@ -413,7 +413,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRK-C7-dr4">
-                                <rect key="frame" x="8" y="591" width="359" height="30"/>
+                                <rect key="frame" x="8" y="702" width="359" height="30"/>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Search">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -426,7 +426,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter everything" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLj-ed-HOL">
-                                        <rect key="frame" x="125.5" y="31.5" width="124" height="21"/>
+                                        <rect key="frame" x="125.66666666666669" y="39.666666666666664" width="124" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Iab-Pg-yLO"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="Ukv-OJ-ucV"/>
@@ -440,11 +440,11 @@
                                 <constraints>
                                     <constraint firstItem="HLj-ed-HOL" firstAttribute="centerX" secondItem="7nV-3D-GTj" secondAttribute="centerX" id="4OE-n0-jWg"/>
                                     <constraint firstAttribute="height" constant="70" id="bIY-hZ-R28"/>
-                                    <constraint firstItem="HLj-ed-HOL" firstAttribute="centerY" secondItem="7nV-3D-GTj" secondAttribute="centerY" constant="7" id="cY0-1B-ohz"/>
+                                    <constraint firstItem="HLj-ed-HOL" firstAttribute="centerY" secondItem="7nV-3D-GTj" secondAttribute="centerY" constant="15" id="cY0-1B-ohz"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqz-GD-GUd">
-                                <rect key="frame" x="8" y="629" width="359" height="30"/>
+                                <rect key="frame" x="8" y="740" width="359" height="30"/>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -610,7 +610,7 @@
             <objects>
                 <viewController id="tcG-fF-XUE" customClass="SearchFilterForEveryNewsViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wUs-hs-T5p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search key word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="909-Wk-Qxc">
@@ -683,7 +683,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwQ-Ky-D0m">
-                                <rect key="frame" x="8" y="591" width="359" height="30"/>
+                                <rect key="frame" x="8" y="702" width="359" height="30"/>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Search">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -696,7 +696,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter Headlines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ca-ce-xs7">
-                                        <rect key="frame" x="128" y="31.5" width="119" height="21"/>
+                                        <rect key="frame" x="128" y="38.666666666666664" width="119" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="6Wg-SL-4ch"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="hXN-7C-jVq"/>
@@ -708,13 +708,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="0ca-ce-xs7" firstAttribute="centerY" secondItem="IJy-Qi-2H0" secondAttribute="centerY" constant="7" id="RxL-yO-vay"/>
+                                    <constraint firstItem="0ca-ce-xs7" firstAttribute="centerY" secondItem="IJy-Qi-2H0" secondAttribute="centerY" constant="14" id="RxL-yO-vay"/>
                                     <constraint firstAttribute="height" constant="70" id="XVx-eE-NYB"/>
                                     <constraint firstItem="0ca-ce-xs7" firstAttribute="centerX" secondItem="IJy-Qi-2H0" secondAttribute="centerX" id="rjC-f5-YAV"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-Fy-wix">
-                                <rect key="frame" x="8" y="629" width="359" height="30"/>
+                                <rect key="frame" x="8" y="740" width="359" height="30"/>
                                 <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -880,7 +880,7 @@
             <objects>
                 <navigationController id="tzQ-4S-z3f" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="cdL-N8-LQB">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

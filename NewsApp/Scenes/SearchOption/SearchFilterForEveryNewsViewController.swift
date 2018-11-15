@@ -11,7 +11,7 @@ import UIKit
 
 class SearchFilterEveryNewsViewModel{
     
-     var newsViewModel:NewsViewModel?
+    weak var newsViewModel:NewsViewModel?
     func search(){
         
         newsViewModel?.fetch()
