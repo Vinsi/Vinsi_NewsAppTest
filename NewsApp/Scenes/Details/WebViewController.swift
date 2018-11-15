@@ -30,15 +30,21 @@ class WebViewController : BaseViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.webView.stopLoading()
-        self.navigationController?.popViewController(animated: true)
-    }
+        self.utility?.alert?.showMessage(text: "Cancel Operation", title: "!!!!", defaultbutton: "Ok", cancelbutton: "Cancel",callback:{ (index) in
+          if index  == 0 {
+                self.webView.stopLoading()
+                self.navigationController?.popViewController(animated: true)
+            }
+        })
+       
+    
+}
 }
 extension WebViewController:WKNavigationDelegate{
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!)
     {
         
-        self.utility?.activity?.showHud(inView: UIApplication.shared.keyWindow!)
+        self.utility?.activity?.showHud(inView: self.webView)
     }
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!){
         self.utility?.activity?.hide()

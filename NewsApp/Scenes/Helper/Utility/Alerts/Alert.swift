@@ -33,17 +33,32 @@ class AlertMessage: IAlert{
         self.controller?.present(alert, animated: true, completion: nil)
     }
     
-    func showMessage(text: String, title: String, buttons: [(String,Int)],style:Int, callback: (Int) -> Void) {
+    func showMessage(text:String ,title:String ,defaultbutton: String,cancelbutton:String, callback: @escaping (Int) -> Void) {
         
-        let alert = UIAlertController(title: "Alert", message: text, preferredStyle:UIAlertController.Style(rawValue: style)!)
-        
-        for button in buttons {
-            let (text,style) = button
-            alert.addAction(
-                UIAlertAction(title: text, style: UIAlertAction.Style(rawValue: style)!, handler: { action in })
-            )
+        let alert = UIAlertController(title: "Alert", message: text, preferredStyle:UIAlertController.Style.alert)
+
+       
+    
             
-        }
+            alert.addAction(
+                UIAlertAction(title: defaultbutton, style: UIAlertAction.Style.default, handler: { action in
+                    
+                    callback(0)
+                   
+                    
+                }))
+           alert.addAction(
+                    UIAlertAction(title: cancelbutton, style: UIAlertAction.Style.cancel, handler: { action in
+                        
+                        callback(1)
+                        
+                        
+                    }))
+           
+       
+        
+            
+     
         self.controller?.present(alert, animated: true, completion: nil)
     }
     

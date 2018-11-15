@@ -39,7 +39,7 @@
 		A9D9E0CC219C03B600497005 /* JHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0CB219C03B600497005 /* JHud.swift */; };
 		A9D9E0CE219C03FA00497005 /* IAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0CD219C03FA00497005 /* IAlert.swift */; };
 		A9D9E0D3219C34FC00497005 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0D2219C34FC00497005 /* WebViewController.swift */; };
-		A9D9E0D6219C3D2B00497005 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0D5219C3D2B00497005 /* SearchViewController.swift */; };
+		A9D9E0D6219C3D2B00497005 /* SearchFilterForEveryNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0D5219C3D2B00497005 /* SearchFilterForEveryNewsViewController.swift */; };
 		A9D9E0D9219C489B00497005 /* RootApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0D8219C489B00497005 /* RootApplicationService.swift */; };
 		A9D9E0DB219C4A6300497005 /* IQKeyBoardApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0DA219C4A6300497005 /* IQKeyBoardApplicationService.swift */; };
 		AC523E69626D426C3E7A5CD6 /* Pods_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFB92B1F50871D09CA09A92 /* Pods_NewsApp.framework */; };
@@ -108,7 +108,7 @@
 		A9D9E0CB219C03B600497005 /* JHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHud.swift; sourceTree = "<group>"; };
 		A9D9E0CD219C03FA00497005 /* IAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAlert.swift; sourceTree = "<group>"; };
 		A9D9E0D2219C34FC00497005 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		A9D9E0D5219C3D2B00497005 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A9D9E0D5219C3D2B00497005 /* SearchFilterForEveryNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterForEveryNewsViewController.swift; sourceTree = "<group>"; };
 		A9D9E0D8219C489B00497005 /* RootApplicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootApplicationService.swift; sourceTree = "<group>"; };
 		A9D9E0DA219C4A6300497005 /* IQKeyBoardApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IQKeyBoardApplicationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -388,7 +388,7 @@
 		A9D9E0D4219C3D1900497005 /* SearchOption */ = {
 			isa = PBXGroup;
 			children = (
-				A9D9E0D5219C3D2B00497005 /* SearchViewController.swift */,
+				A9D9E0D5219C3D2B00497005 /* SearchFilterForEveryNewsViewController.swift */,
 			);
 			path = SearchOption;
 			sourceTree = "<group>";
@@ -648,7 +648,7 @@
 				A9547B1F219C992100D88B65 /* IOnePicker.swift in Sources */,
 				A91C3132219B09080064638C /* NewsViewController.swift in Sources */,
 				A91C3130219B09080064638C /* AppDelegate.swift in Sources */,
-				A9D9E0D6219C3D2B00497005 /* SearchViewController.swift in Sources */,
+				A9D9E0D6219C3D2B00497005 /* SearchFilterForEveryNewsViewController.swift in Sources */,
 				A91C3171219B25BB0064638C /* TopHeadlineResponseModel.swift in Sources */,
 				A9D9E0D3219C34FC00497005 /* WebViewController.swift in Sources */,
 				A9D9E0CE219C03FA00497005 /* IAlert.swift in Sources */,

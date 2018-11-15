@@ -8,6 +8,19 @@
 
 import UIKit
 import RxSwift
+public enum NewsType:Int{
+    case headLines = 0
+    case everything = 1
+    func toString()->String{
+        return ["Headlines","Everything"] [self.rawValue]
+        
+    }
+    func toggleValue()->NewsType{
+        
+        if self == .headLines { return .everything}
+        else {return .headLines}
+    }
+}
 
 class BaseViewController :UIViewController {
      var utility:IBasicUtility? = BasicUtility()
@@ -25,6 +38,9 @@ class NewsViewController: BaseViewController {
     var viewModel:NewsViewModel? = NewsViewModel()
    
     let disposeBag:DisposeBag = DisposeBag()
+    
+  
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var searchTextField:UITextField!
     @IBOutlet var tableView: UITableView!
     @IBAction func searchButtonTapped(sender:UIButton){
@@ -32,10 +48,18 @@ class NewsViewController: BaseViewController {
             self.utility?.alert?.showMessage(text: "please fill keyword", style: 1)
             return
         }
-        self.viewModel?.newsRequest.language = Language.en
-        self.viewModel?.newsRequest.sortBy   = SortOrder.publishedAt
-        self.viewModel?.newsRequest.q   = self.searchTextField.text
-        self.viewModel?.newsRequest.page = 1
+        if  self.viewModel?.newsType.value == NewsType.headLines {
+            self.viewModel?.headlinesRequestParam.value.q = self.searchTextField.text
+            self.viewModel?.headlinesRequestParam.value.page = 1
+        }
+        else {
+            
+            self.viewModel?.everythingRequestParam.value.language = Language.en
+            self.viewModel?.everythingRequestParam.value.sortBy   = SortOrder.publishedAt
+            self.viewModel?.everythingRequestParam.value.q   = self.searchTextField.text
+            self.viewModel?.everythingRequestParam.value.page = 1
+        }
+      
         self.viewModel?.fetch()
     }
     override func initialize(){
@@ -43,7 +67,11 @@ class NewsViewController: BaseViewController {
         self.viewModel?.alert = self.utility?.alert
         self.tableView.rowHeight =  UITableView.automaticDimension
      
-        
+        viewModel?.newsType.asObservable().subscribe({ (event) in
+            self.titleLabel.text = event.element?.toString()
+           
+            
+        }).disposed(by: self.disposeBag)
         viewModel?.isLoading.asObservable().subscribe({ (event) in
            
             if event.element == true {
@@ -70,6 +98,21 @@ class NewsViewController: BaseViewController {
             
         }).disposed(by: self.disposeBag)
         
+    }
+    @IBAction func filterButtonTapped(_ sender:UIButton){
+        if self.viewModel?.newsType.value == NewsType.everything {
+        self.performSegue(withIdentifier: "everyfilter", sender: self.viewModel)
+        }
+        else {
+            
+                self.performSegue(withIdentifier: "headlinefilter", sender: self.viewModel)
+            
+        }
+    }
+    @IBAction func titleButtonTapped(_ sender:UIButton){
+        if let viewmdl = self.viewModel {
+           viewmdl.newsType.value =  viewmdl.newsType.value.toggleValue()
+        }
     }
     override func viewDidLoad() {
         
@@ -118,6 +161,11 @@ extension NewsViewController :UITableViewDelegate,UITableViewDataSource{
                 
             }
             }
+        }
+        else if let vwc = segue.destination as? SearchFilterForEveryNewsViewController{
+            vwc.viewModel?.newsViewModel = self.viewModel
+            
+            
         }
         
         
