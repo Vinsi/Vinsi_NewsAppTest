@@ -50,7 +50,7 @@ class NewsViewModel{
             else {
                 self.headlinesRequestParam.value = TopHeadlinesRequestModel()
                  self.headlinesRequestParam.value.pageSize = self.pageLimit
-                 self.everythingRequestParam.value.page = self.pagestart
+                 self.headlinesRequestParam.value.page     = self.pagestart
             }
          }).disposed(by: self.disposeBag)
        

@@ -48,6 +48,8 @@ class SearchFilterForEveryNewsViewController:UIViewController{
         param.sources        = (sourceTextField  .text == "" )    ? nil:sourceTextField      .text
         param.domains        = (domainTextField  .text == "" )    ? nil:domainTextField      .text
         param.excludeDomains = (excludedTextField.text == "" )    ? nil:excludedTextField    .text
+        param.page           = 1
+        param.pageSize       = 10
         self.viewModel?.newsViewModel?.everythingRequestParam.value = param
         
           self.dismiss(animated: true, completion: nil)

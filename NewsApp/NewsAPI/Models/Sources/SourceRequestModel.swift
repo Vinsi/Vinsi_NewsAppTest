@@ -81,7 +81,7 @@ public enum Countries:String,Codable{
    case  us = "us"
    case  ve = "ve"
    case  za = "za"
-    public func allValues() ->[String] {
+    public static func allValues() ->[String] {
         let items = [
              Countries.ae.rawValue,
              Countries.ar.rawValue,

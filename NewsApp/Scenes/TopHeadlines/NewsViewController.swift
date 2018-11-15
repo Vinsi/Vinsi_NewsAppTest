@@ -167,6 +167,11 @@ extension NewsViewController :UITableViewDelegate,UITableViewDataSource{
             
             
         }
+        else if let vwc = segue.destination as? SearchFilterForHeadlinesViewController{
+            vwc.viewModel?.newsViewModel = self.viewModel
+            
+            
+        }
         
         
     }

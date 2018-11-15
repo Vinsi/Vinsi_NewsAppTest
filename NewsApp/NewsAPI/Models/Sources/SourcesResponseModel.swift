@@ -49,7 +49,7 @@ public enum Category: String, Codable {
     case sports        = "sports"
     case technology    = "technology"
     
-    public func allValues() ->[String] {
+    public static func allValues() ->[String] {
      let items = [
        Category.business     .rawValue,
        Category.entertainment.rawValue,

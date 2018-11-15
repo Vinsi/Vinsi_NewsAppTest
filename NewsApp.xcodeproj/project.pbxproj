@@ -31,6 +31,7 @@
 		A91C3186219B555F0064638C /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C3185219B555F0064638C /* Pager.swift */; };
 		A91C3189219B68020064638C /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C3188219B68020064638C /* NewsCell.swift */; };
 		A91C318C219B69C20064638C /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C318B219B69C20064638C /* NewsViewModel.swift */; };
+		A94AC3D1219D9D4900A8A29A /* SearchFilterForHeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AC3D0219D9D4900A8A29A /* SearchFilterForHeadlinesViewController.swift */; };
 		A9547B1F219C992100D88B65 /* IOnePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9547B1E219C992100D88B65 /* IOnePicker.swift */; };
 		A9D9E0C1219BF90400497005 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0C0219BF90400497005 /* GenericTableViewController.swift */; };
 		A9D9E0C4219C015400497005 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9E0C3219C015400497005 /* Utility.swift */; };
@@ -100,6 +101,7 @@
 		A91C3185219B555F0064638C /* Pager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pager.swift; sourceTree = "<group>"; };
 		A91C3188219B68020064638C /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		A91C318B219B69C20064638C /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		A94AC3D0219D9D4900A8A29A /* SearchFilterForHeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterForHeadlinesViewController.swift; sourceTree = "<group>"; };
 		A9547B1E219C992100D88B65 /* IOnePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOnePicker.swift; sourceTree = "<group>"; };
 		A9D9E0C0219BF90400497005 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
 		A9D9E0C3219C015400497005 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D9E0D5219C3D2B00497005 /* SearchFilterForEveryNewsViewController.swift */,
+				A94AC3D0219D9D4900A8A29A /* SearchFilterForHeadlinesViewController.swift */,
 			);
 			path = SearchOption;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				A91C3178219B33B40064638C /* NewsAPIStatusCode.swift in Sources */,
 				A9D9E0CC219C03B600497005 /* JHud.swift in Sources */,
 				A91C316C219B22870064638C /* SourceRequestModel.swift in Sources */,
+				A94AC3D1219D9D4900A8A29A /* SearchFilterForHeadlinesViewController.swift in Sources */,
 				A9D9E0C8219C036C00497005 /* Alert.swift in Sources */,
 				A9D9E0DB219C4A6300497005 /* IQKeyBoardApplicationService.swift in Sources */,
 				A91C3186219B555F0064638C /* Pager.swift in Sources */,
