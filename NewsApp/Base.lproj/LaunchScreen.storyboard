@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foD-ut-IR0">
+                                <rect key="frame" x="118.5" y="315" width="138" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="LwJ-hK-daT"/>
+                                    <constraint firstAttribute="height" constant="37" id="WNu-PV-sDj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Vinsi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvJ-o2-3dG">
+                                <rect key="frame" x="140" y="360" width="95" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="G2Z-OA-DHd"/>
+                                    <constraint firstAttribute="height" constant="16" id="yhJ-DI-Ep7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yPS-Mt-xEW">
+                                <rect key="frame" x="171.5" y="275" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="RXY-iD-iF0"/>
+                                    <constraint firstAttribute="height" constant="32" id="xh1-Bw-6RI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47843137250000001" green="0.75294117650000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="foD-ut-IR0" firstAttribute="top" secondItem="yPS-Mt-xEW" secondAttribute="bottom" constant="8" id="3UC-oX-Vrp"/>
+                            <constraint firstItem="yPS-Mt-xEW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Axr-Gc-TrC"/>
+                            <constraint firstItem="foD-ut-IR0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LB6-J7-4hx"/>
+                            <constraint firstItem="FvJ-o2-3dG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PKV-qO-OUO"/>
+                            <constraint firstItem="FvJ-o2-3dG" firstAttribute="top" secondItem="foD-ut-IR0" secondAttribute="bottom" constant="8" id="PmK-7d-BEp"/>
+                            <constraint firstItem="foD-ut-IR0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dNh-bK-ME8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +62,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchIcon" width="33.882354736328125" height="33.882354736328125"/>
+    </resources>
 </document>
