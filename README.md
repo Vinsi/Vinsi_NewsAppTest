@@ -1,6 +1,7 @@
 # NewsApp Documentation
 This app will have a main screen where you can switch between different modes of search like.
-
+# FEATURES 
+ON DEMAND LOADING ON SCROLL
 # 1: Everything Search
 
 # 2: Headline Search
