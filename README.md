@@ -11,14 +11,20 @@ where you can opt your filter and search further.
 
 you can move to news details further by tapping details button .it will open the url associated with that news 
 
-core libraries used are listed in pod files
+core thirdparty libraries used can be listed in pod files
 
   pod 'Moya/RxSwift', '~> 11.0'      => Easy Endpoint creation
+  
   pod 'PluggableApplicationDelegate' => Easy management of app Delegates
+  
   pod 'ChameleonFramework'           => Easy color manager
+  
   pod 'JGProgressHUD'                => Loading huds animated
+  
   pod 'Kingfisher'                   => Lazy /cached image loading
+  
   pod 'DateToolsSwift'               => Date in human readable way
+  
   pod 'IQKeyboardManagerSwift'       => Easy Keyboard avoiding
 
 
