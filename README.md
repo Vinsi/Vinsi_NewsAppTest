@@ -1,9 +1,9 @@
-# Vinsi_NewsAppTest
+# NewsApp Documentation
 This app will have a main screen where you can switch between different modes of search like.
 
-1: Everything Search
+# 1: Everything Search
 
-2: Headline Search
+# 2: Headline Search
 
 When tapped on Top navigation it will toggle.
 you can filter the search in 2 different approach by entering search term and another option is through advanced filter
@@ -11,7 +11,7 @@ where you can opt your filter and search further.
 
 you can move to news details further by tapping details button .it will open the url associated with that news 
 
-core thirdparty libraries used can be listed in pod files
+# Core Thirdparty libraries used can be listed in pod files
 
   pod 'Moya/RxSwift', '~> 11.0'      => Easy Endpoint creation
   
